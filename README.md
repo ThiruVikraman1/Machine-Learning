@@ -82,3 +82,12 @@ Welcome to my Machine Learning repository! This repository contains a collection
 
 **Feature Diversification**: Implementing **`max_features='log2'`** proved highly effective. The model reduced the dominance of any single feature and improved the forest's overall generalization.
 
+**🏆 Project Conclusion:**
+Final Model ComparisonAfter implementing and tuning four major regression algorithms, I have evaluated their performance based on the $R^2$ Score to identify the most effective model for predicting startup profit.
+
+**📊 Performance Leaderboard**
+**Best Model**                 **ConfigurationR2**                                 **$R^2$ Score**
+Absolute Error(DTR)               Splitter:                                         Best0.95 (95%)
+Multiple Linear Regression        Default                                           0.93 (93%)
+Support Vector Machine (SVR)      Kernel: Linear, C: 0.01                           0.93 (93%)
+Random Forest                     n_estimators: 10/50, max_features: sqrt/log2      0.83 (83%)
