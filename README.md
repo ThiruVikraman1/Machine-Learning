@@ -33,7 +33,7 @@ Welcome to my Machine Learning repository! This repository contains a collection
 * Profit_Model.sav           # Saved Pickle Model
 * Deployment.ipynb           # Real-time Prediction
 
-**4.Random_Forest/: Predicting Startup Profit based on R&D, Administration, and Marketing expenditures.**
+**5.Random_Forest/: Predicting Startup Profit based on R&D, Administration, and Marketing expenditures.**
 
 * 50_Startups.csv            # Multi-feature Dataset
 * Model_Creation.ipynb       # Data preprocessing and grid of 24 experiments
