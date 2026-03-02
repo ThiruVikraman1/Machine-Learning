@@ -54,11 +54,11 @@ Welcome to my Machine Learning repository! This repository contains a collection
 
 **Categories:** Implemented One-Hot Encoding for the "State" column. Used drop_first=True to avoid the Dummy Variable Trap.
 
-**Evaluation:** Achieved an R squared of 0.93. I use Adjusted R-squared to ensure added features (like State) truly contribute to the model.
+**Evaluation:** Achieved an **R squared of 0.93**. I use Adjusted R-squared to ensure added features (like State) truly contribute to the model.
 
 **Project 3: Support Vector Regression (SVR)**
 
-**Model Performance:** Achieved 93% Accuracy same as  Multiple Linear Regression (93%).
+**Model Performance:** Achieved **93% Accuracy** same as  Multiple Linear Regression (93%).
 
 **Hyperparameter Tuning:** Tuned the $C$ parameter to 0.01 to create a "Soft Margin," which reduced overfitting and allowed the model to focus on the global trend of the startup data.
 
@@ -66,10 +66,19 @@ Welcome to my Machine Learning repository! This repository contains a collection
 
 **Project 4: Decision Tree Regression (DTR)**
 
-**Model Performance:** Achieved a peak accuracy of 95.8% ($R^2$ Score), officially outperforming both Multiple Linear Regression (93%) and SVR (93%).
+**Model Performance:** Achieved a peak accuracy of **95.8%** ($R^2$ Score), officially outperforming both Multiple Linear Regression (93%) and SVR (93%).
 
 **Hyperparameter Tuning:** Conducted extensive "hypertuning" of the criterion and splitter parameters. Using absolute_error as the criterion proved most effective, as it is more robust to outliers and focused on the median profit of startup groups rather than the mean.
 
 **Structural Insight:** By visualizing the tree, it was confirmed that R&D Spend was selected as the Root Node, identifying it as the single most important predictor of a startup's profit.
 
 **Non-Linear Flexibility:** While SVR struggled with non-linear kernels like RBF, the Decision Tree’s ability to "split" the data into distinct segments allowed it to capture local patterns that linear models missed.
+
+**Project 5: Random Forest Regression (RFR)**
+
+**Model Performance**: Achieved a peak accuracy of **83.4%** ($R^2$ Score). While the single Decision Tree reached a higher peak of 95.8% for this specific dataset, the Random Forest demonstrated greater stability by averaging the predictions of multiple trees.
+
+**Hyperparameter Tuning**: Conducted a grid search across **24 unique combinations** of `n_estimators`, `criterion`, and `max_features`. The optimal configuration was found using **50 trees** (`n_estimators=50`) and the **`squared_error`** criterion.
+
+**Feature Diversification**: Implementing **`max_features='log2'`** proved highly effective. The model reduced the dominance of any single feature and improved the forest's overall generalization.
+
