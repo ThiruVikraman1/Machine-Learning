@@ -89,7 +89,7 @@ Performance Leaderboard
 
 Best Model Configuration | R² Score  
 --------------------------|----------  
-Absolute Error (DTR) Splitter: Best | 0.95 (95%)  
+Absolute Error (DTR) |Splitter: Best| 0.95 (95%)  
 Multiple Linear Regression Default | 0.93 (93%)  
-Support Vector Machine (SVR) | Kernel: Linear, C: 0.01 | 0.93 (93%)  
-Random Forest | n_estimators: 10/50, max_features: sqrt/log2 | 0.83 (83%)  
+Support Vector Machine (SVR) | Kernel: Linear, C: 0.01  0.93 (93%)  
+Random Forest | n_estimators: 10/50, max_features: sqrt/log2  0.83 (83%)  
